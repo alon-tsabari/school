@@ -383,6 +383,10 @@ nav > ul li:hover {
  	background-color: rgb(240,240,240);
  }
 
+ .info {
+ 	background-color: white;
+ }
+
  .head {
  	background-color: rgb(109, 170, 197);
  }
