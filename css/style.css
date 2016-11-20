@@ -105,6 +105,10 @@ nav > ul li {
 	cursor: pointer;
 }
 
+nav ul li > a {
+	width: 100%;
+}
+
 /**	main-header **/
 
 .header-main {
