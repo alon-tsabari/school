@@ -1,3 +1,9 @@
+/** FONTS **/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+/** GENERAL **/
+
 * {
 	box-sizing: border-box;
 }
@@ -22,12 +28,16 @@ img {
 }
 
 body {
-	font: 1em/1.5 'calibri';
+	font: 1em/1.5 'Roboto';
 }
 
-.top-header h1 {
+/** Display: none **/
+
+.top-header h1, .parking h2 > span {
 	display: none;
 }
+
+/** top-header **/
 
 .top-header {
 	display: flex;
@@ -98,25 +108,51 @@ nav > ul li {
 
 .main-header {
 	padding: 20px;
+	border-bottom: 15px solid rgb(88, 87, 69);
 }
 
-.main-header h2 {
-	font-size: 2.5em;
+.main-header h1 {
+	font-size: 2em;
 	text-shadow: -1px 1px 2px black;
 }
 
 .main-header p {
-	font-size: 1.4em;
+	font-size: 1em;
 	font-weight: 600;
 }
 
-.lecturers {
+/** MAIN **/
+
+.main-wrapper {
 	width:80%;
-	margin: 20px auto;
+	margin: 0px auto;
+}
+
+/** lecturers **/
+
+.lectures {
+	padding: 20px 0;
+}
+
+/** lectures-info **/
+
+.lectures-head h2 {
+	font-size: 1.3em;
+}
+
+.lectures-head p {
+	background: url('../img/clock.png') left no-repeat;
+	background-size: 20px 20px;
+	padding-left: 25px;
+	font-weight: bold;
 }
 
 .container {
 	margin-bottom: 20px;
+}
+
+.container:last-child {
+	margin: 0;
 }
 
 .container img {
@@ -139,13 +175,97 @@ nav > ul li {
 	position: relative;
 }
 
+.head h3 {
+	font-size: 1.05em
+}
+
 .container p + p {
 	margin-top: 10px;
 }
 
-/***************
-  PSUEDO-CLASSES
- ****************/
+/** parking **/
+
+.parking, .form-data {
+	box-shadow: inset 0px .2px 1px rgba(0,0,0,.4);
+	padding: 20px 0;
+}
+
+.parking h2 {
+	font-size: 2em;
+}
+
+.parking h2 > span {
+	display: none;
+}
+
+.location {
+	background: url(../img/road.png) left no-repeat;
+	background-size: 20px;
+	padding-left: 25px;
+}
+
+.parking-main p {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.parking-main p > span {
+	font-size: 2em;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.parking-main p:last-child > span {
+	padding-left: 30px;
+}
+
+.parking ol {
+	padding-left: 20px;
+}
+
+/*** sign-up ***/
+
+.form-data h2 {
+	margin-bottom: 10px;
+}
+
+.form-data h3 {
+	font-weight: 500;
+	font-size: 1.05em;
+}
+
+.form-data p {
+	font-size: .9em;
+	margin-top: 10px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+[type="text"] {
+	padding: 15px 10px;
+	font-size: 1em;
+	box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,.6);
+	border-radius: 7px;
+}
+
+.form-data [type="submit"] {
+	border: none;
+	width: 100%;
+	padding: 15px 10px;
+	font-size: 1.3em;
+}
+
+
+/*** PSUEDO-CLASSES ***/
 
 nav:hover > ul{
 	height: 252px;
@@ -157,13 +277,11 @@ nav:hover .floor {
 }
 
 nav > ul li:hover {
- 	background-color: #d6d62c;
+ 	background-color: rgb(225, 200, 47);
  }
 
 
-/***************
-  PSUEDO-ELEMENTS
- ****************/
+/**	PSUEDO-ELEMENTS ***/
 
 .head::before {
 	content: '';
@@ -176,9 +294,7 @@ nav > ul li:hover {
 }
 
 
-/*******
-  COLORS
- ********/
+/** COLORS **/
  
  .top-header, .current, footer {
 	background-color: rgb(28, 27, 27);
@@ -189,10 +305,10 @@ nav > ul li:hover {
  }
 
  .main-header {
- 	background-color: #8d8686;
+ 	background-color: rgb(148, 147, 129);
  }
 
- h2 {
+ .main-header h1 {
  	color: white;
  }
 
@@ -200,6 +316,36 @@ nav > ul li:hover {
 	color: white;
  }
 
+ .lectures {
+ 	background-color: rgb(240,240,240);
+ }
+
  .head {
  	background-color: rgb(109, 170, 197);
+ }
+
+ .parking {
+ 	background-color: rgba(148, 149, 135, .3);
+ 	color: rgb(69, 69, 69);
+ }
+
+ .form-data {
+	background-color: rgb(149, 150, 136);
+ }
+
+ .form-head h2 {
+ 	color: rgb(225, 200, 47);
+ 	font-weight: 500;
+ }
+
+ .form-data h3, .form-data p {
+ 	color: white;
+ }
+
+ label, .form-data [type="submit"] {
+ 	color: white;
+ }
+
+ .form-data [type="submit"] {
+ 	background-color: #4d4d4d;
  }
