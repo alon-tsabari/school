@@ -8,7 +8,7 @@
 	box-sizing: border-box;
 }
 
-body, div, section, nav, ul, img, h1, h2, h3, p, a, span, figure {
+body, div, section, nav, ul, img, h1, h2, h3, h4, p, a, span, figure {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -33,13 +33,13 @@ body {
 
 /** Display: none **/
 
-.top-header h1, .parking h2 > span {
+.header-top h1, .parking h2 > span {
 	display: none;
 }
 
-/** top-header **/
+/** header-top **/
 
-.top-header {
+.header-top {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -92,6 +92,7 @@ nav ul {
 	top: 61px;
 	width: 100%;
 	height: 0;
+	box-shadow: 1px 1px 5px black;
 	overflow: hidden;
 	transition: height .5s;
 }
@@ -106,17 +107,17 @@ nav > ul li {
 
 /**	main-header **/
 
-.main-header {
+.header-main {
 	padding: 20px;
 	border-bottom: 15px solid rgb(88, 87, 69);
 }
 
-.main-header h1 {
+.header-main h1 {
 	font-size: 2em;
 	text-shadow: -1px 1px 2px black;
 }
 
-.main-header p {
+.header-main p {
 	font-size: 1em;
 	font-weight: 600;
 }
@@ -267,19 +268,69 @@ label {
 
 /*** reference ***/
 
+.reference-head {
+	margin-bottom: 20px;
+}
+
+.reference-main {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 figure {
-	width:80%;
-	margin: 20px auto;
+	width: 48%;
+	margin: 0 auto 20px;
 }
 
 figure img{
 	border-radius: 10px;
+	height: 115.2px;
+}
+
+figure:first-child img{
+	padding: 10px;
+	background-color: grey;
+}
+
+figcaption h3 {
+	font-size: 1em;
+}
+
+figcaption p {
+	font-size: .8em;
+}
+
+
+/*** FOOTER ***/
+
+.footer-top, .footer-main {
+	padding: 10px 10%;
+}
+
+.footer-top {
+	display: none;
+}
+
+.footer-top h2 {
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.footer-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.back-top {
+	width: 40px;
 }
 
 /*** PSUEDO-CLASSES ***/
 
 nav:hover > ul{
-	height: 252px;
+	height: 248px;
 }
 
 nav:hover .floor {
@@ -307,23 +358,20 @@ nav > ul li:hover {
 
 /** COLORS **/
  
- .top-header, .current, footer {
+ .header-top, .current, .footer-main {
 	background-color: rgb(28, 27, 27);
  }
 
- nav > ul li, .main-header p {
+ nav > ul li, .header-main p {
  	color: rgb(28, 27, 27);
  }
 
- .main-header {
+ .header-main {
  	background-color: rgb(148, 147, 129);
  }
 
- .main-header h1 {
- 	color: white;
- }
-
- .top-header, .nav li {
+ .header-top, .nav li, footer, .header-main h1,
+ .form-data, .form-data [type="submit"]  {
 	color: white;
  }
 
@@ -356,14 +404,10 @@ nav > ul li:hover {
  	font-weight: 500;
  }
 
- .form-data h3, .form-data p {
- 	color: white;
- }
-
- label, .form-data [type="submit"] {
- 	color: white;
- }
-
  .form-data [type="submit"] {
  	background-color: rgb(77, 77, 77);
+ }
+
+ .footer-top {
+ 	background-color: rgba(50, 50, 50, .5);
  }
