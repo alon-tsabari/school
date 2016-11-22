@@ -31,9 +31,23 @@ body {
 	font: 1em/1.5 'Roboto';
 }
 
+.parking, .form-data, .reference {
+	box-shadow: inset 0px .2px 1px rgba(0,0,0,.4);
+	padding: 20px 0;
+}
+
+.parking-head h2, .form-data h2 {
+	font-size: 2.2em;
+}
+
+.footer-main, .reference-main {
+	display: flex;
+	justify-content: space-between;
+}
+
 /** Display: none **/
 
-.header-top h1, .parking h2 > span {
+.header-top h1, .parking h2 > span, .footer-top  {
 	display: none;
 }
 
@@ -60,7 +74,6 @@ nav {
 	width: 42px;
 	margin-bottom: 5px;
 	border-radius: 5px;
-	background-color: rgb(67, 64, 64);
 	position: relative;
 }
 
@@ -88,13 +101,14 @@ nav {
 nav ul {
 	position: absolute;
 	background-color: white;
-	left: 0;
+	right: 0;
 	top: 61px;
 	width: 100%;
 	height: 0;
 	box-shadow: 1px 1px 5px black;
 	overflow: hidden;
 	transition: height .5s;
+	z-index: 1;
 }
 
 nav > ul li {
@@ -109,11 +123,16 @@ nav ul li > a {
 	width: 100%;
 }
 
-/**	main-header **/
+.direction {
+	border: none;
+}
+
+/**	header-main **/
 
 .header-main {
 	padding: 20px;
 	border-bottom: 15px solid rgb(88, 87, 69);
+	position: relative;
 }
 
 .header-main h1 {
@@ -126,6 +145,14 @@ nav ul li > a {
 	font-weight: 600;
 }
 
+.header-main img {
+		position: absolute;
+		width: 80px;
+		right: 10px;
+		bottom: 0;
+	}
+
+
 /** MAIN **/
 
 .main-wrapper {
@@ -133,7 +160,11 @@ nav ul li > a {
 	margin: 0px auto;
 }
 
-/** lecturers **/
+h4 + hr {
+	margin-top: 4px
+}
+
+/** lectures **/
 
 .lectures {
 	padding: 20px 0;
@@ -142,7 +173,7 @@ nav ul li > a {
 /** lectures-info **/
 
 .lectures-head h2 {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .lectures-head p {
@@ -189,23 +220,14 @@ nav ul li > a {
 
 /** parking **/
 
-.parking, .form-data, .reference {
-	box-shadow: inset 0px .2px 1px rgba(0,0,0,.4);
-	padding: 20px 0;
-}
-
-.parking h2 {
-	font-size: 2em;
-}
-
-.parking h2 > span {
-	display: none;
-}
-
 .location {
 	background: url(../img/road.png) left no-repeat;
 	background-size: 20px;
 	padding-left: 25px;
+}
+
+.parking-head h3 {
+	font-size: 1.25em;
 }
 
 .parking-main p {
@@ -257,7 +279,8 @@ label {
 [type="text"] {
 	padding: 15px 10px;
 	font-size: 1em;
-	box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,.6);
+	border: none;
+	box-shadow: inset .5px .5px 2px 1px rgba(0,0,0,.6);
 	border-radius: 4px;
 }
 
@@ -275,9 +298,11 @@ label {
 	margin-bottom: 20px;
 }
 
+.reference h2 {
+	font-size: 1.7em;
+}
+
 .reference-main {
-	display: flex;
-	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -289,11 +314,8 @@ figure {
 figure img{
 	border-radius: 10px;
 	height: 115.2px;
-}
-
-figure:first-child img{
-	padding: 10px;
-	background-color: grey;
+	display: block;
+	margin: 0 0 10px;
 }
 
 figcaption h3 {
@@ -311,19 +333,17 @@ figcaption p {
 	padding: 10px 10%;
 }
 
-.footer-top {
-	display: none;
-}
-
 .footer-top h2 {
 	font-size: 2em;
 	font-weight: 400;
 }
 
 .footer-main {
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
+}
+
+.logo-footer img {
+	width: 130px;
 }
 
 .back-top {
@@ -333,17 +353,21 @@ figcaption p {
 /*** PSUEDO-CLASSES ***/
 
 nav:hover > ul{
-	height: 248px;
+	height: 288px;
 }
 
 nav:hover .floor {
-	width:50px;
+	width: 50px;
 	background-color: white;
 }
 
 nav > ul li:hover {
  	background-color: rgb(225, 200, 47);
- }
+}
+
+.direction:hover {
+	background-color: rgb(28, 27, 27);
+}
 
 
 /**	PSUEDO-ELEMENTS ***/
@@ -361,8 +385,12 @@ nav > ul li:hover {
 
 /** COLORS **/
  
- .header-top, .current, .footer-main {
+ .header-top, .current, .footer-main, .direction {
 	background-color: rgb(28, 27, 27);
+ }
+
+ .floor, .floor::after, .floor::before {
+	background-color: rgb(67, 64, 64);
  }
 
  nav > ul li, .header-main p {
@@ -374,7 +402,7 @@ nav > ul li:hover {
  }
 
  .header-top, .nav li, footer, .header-main h1,
- .form-data, .form-data [type="submit"]  {
+ .form-data, .form-data [type="submit"], .direction  {
 	color: white;
  }
 
