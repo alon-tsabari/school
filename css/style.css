@@ -294,6 +294,8 @@ label {
 	padding: 15px 10px;
 	font-size: 1.3em;
 	border-radius: 2px;
+	transition: color .5s, transform .5s;
+	cursor: pointer;
 }
 
 /*** reference ***/
@@ -402,6 +404,11 @@ nav > ul li:hover {
 	background-color: rgb(28, 27, 27);
 }
 
+.form-data [type="submit"]:hover {
+	background-color: white;
+	color: rgb(77, 77, 77);
+	transform: scale(.95);
+}
 
 /**	PSUEDO-ELEMENTS ***/
 
