@@ -40,6 +40,7 @@ body {
 
 .parking-head h2, .form-data h2 {
 	font-size: 2.2em;
+	font-weight: 500;
 }
 
 .footer-main, .reference-main {
@@ -476,7 +477,6 @@ nav > ul li:hover {
 
  .form-head h2 {
  	color: rgb(225, 200, 47);
- 	font-weight: 500;
  }
 
  .form-data [type="submit"] {
