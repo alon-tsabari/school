@@ -3,16 +3,20 @@
 	<head>
 		<title>DevShots || Alon Tsabari</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media-querries.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
 			<section class="header-top" id="top">
+				<a class="logo" href=""><img src="img/logo.svg" alt="Netcraft logo"></a>
+				<h1>DevShots | Developers</h1>
 				<nav>
 					<div class="hamburger">
 						<div class="floor"></div>
 					</div>
 					<ul>
+						<li class="direction">Direction</li>
 						<li><a href="">What is that?</a></li>
 						<li><a href="#lectures">Lectures</a></li>
 						<li><a href="#parking">Parking</a></li>
@@ -21,87 +25,95 @@
 						<li><a href="#about">About</a></li>
 					</ul>
 				</nav>
-				<h1>Dev Shots | developers</h1>
-				<a class="logo" href=""><img src="img/logo.svg" alt="Netcraft logo"></a>
 			</section>
 			<section class="header-main">
 				<div>
-					<h1>Development event in good vibes</h1>
-					<p>Talking about the latest technologies and challenges with daily heroes like you</p>
+					<h1>Development event<br> in good vibes</h1>
+					<p>Talking about the latest technologies<br> and challenges with daily<br> heroes like you</p>
 				</div>
+				<img src="img/sitting.png" alt="">
 			</section>
 		</header>
 		<main>
 		<section class="lectures" id="lectures">
 			<div class="main-wrapper">
 				<div class="lectures-head">
-					<h2>Six short gripping lecturers</h2>
+					<h2>Six short gripping lectures</h2>
 					<p>15 minutes each</p>
 				</div>
 				<hr>
-				<div class="container">
-					<img src="img/alon.jpg" alt="lecturer">
-					<div class="info">
-						<div class="head">
-							<h3>Materiality in digital world</h3>
-							<p>Ran Liron</p>
+				<div class="lectures-main">
+					<div class="container">
+						<img src="img/alon.jpg" alt="lecturer">
+						<div class="info">
+							<div class="head">
+								<h3>Materiality in digital world</h3>
+								<p>Ran Liron</p>
+							</div>
+							<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed officiis veritatis facere accusantium, nemo!.</p>
+							<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur unde, vero architecto est provident?</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed officiis veritatis facere accusantium, nemo!.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur unde, vero architecto est provident?</p>
 					</div>
-				</div>
-				<div class="container">
-					<img src="img/ran.jpg" alt="lecturer">
-					<div class="info">
-						<div class="head">
-							<h3>Materiality in digital world</h3>
-							<p>Ran Liron</p>
+					<div class="container">
+						<img src="img/ran.jpg" alt="lecturer">
+						<div class="info">
+							<div class="head">
+								<h3>Materiality in digital world</h3>
+								<p>Ran Liron</p>
+							</div>
+							<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed officiis veritatis facere accusantium, nemo!.</p>
+							<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur unde, vero architecto est provident?</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed officiis veritatis facere accusantium, nemo!.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur unde, vero architecto est provident?</p>
 					</div>
-				</div>
-				<div class="container">
-					<img src="img/dvir.jpg" alt="lecturer">
-					<div class="info">
-						<div class="head">
-							<h3>Materiality in digital world</h3>
-							<p>Ran Liron</p>
+					<div class="container">
+						<img src="img/dvir.jpg" alt="lecturer">
+						<div class="info">
+							<div class="head">
+								<h3>Materiality in digital world</h3>
+								<p>Ran Liron</p>
+							</div>
+							<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed officiis veritatis facere accusantium, nemo!.</p>
+							<p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur unde, vero architecto est provident?</p>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sed officiis veritatis facere accusantium, nemo!.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur unde, vero architecto est provident?</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="parking" id="parking">
 			<div class="main-wrapper">
-				<div class="parking-head">
-					<h2>Where parking?<span>and a few more details</span></h2>
-					<h3>Tonight in the Sublime</h3>
-					<p class="location">Shlomo blvd 53, Tel Aviv</p>
-				</div>
-				<hr>
-				<div class="parking-main">
-					<p>Grouping:<span>18:30</span></p>
-					<p>Starting:<span>19:00</span></p>
-				</div>
-				<hr>
-				<div class="parking-last">
-					<h3>Parking</h3>
+				<div class="parking-content">	
+					<div class="parking-head">
+						<h2>Where parking?<span>and a few more details</span></h2>
+						<h3>Tonight in the Sublime</h3>
+						<p class="location">Shlomo blvd 53, Tel Aviv</p>
+					</div>
 					<hr>
-					<ol>
-						<li>Eli Phelet</li>
-						<li>Alphasi st</li>
-						<li>Haim Ben Atar st</li>
-					</ol>
-					<h3>Buses</h3>
+					<div class="parking-main">
+						<p>Grouping:<span>18:30</span></p>
+						<p>Starting:<span>19:00</span></p>
+					</div>
 					<hr>
-					<ol>
-						<li>Central train station - 42, 142</li>
-						<li>Central station - 96, 201, 163</li>
-					</ol>
+					<div class="parking-last">
+						<div>
+							<h4>Parking</h4>
+							<hr>
+							<ol>
+								<li>Eli Phelet</li>
+								<li>Alphasi st</li>
+								<li>Haim Ben Atar st</li>
+							</ol>
+						</div>
+							<div>
+							<h4>Buses</h4>
+							<hr>
+							<ol>
+								<li>Central train station - 42, 142</li>
+								<li>Central station - 96, 201, 163</li>
+							</ol>
+						</div>
+					</div>
 				</div>
+				<div class="box"></div>
 			</div>
 		</section>
 		<section class="form-data" id="sign-up">
@@ -147,23 +159,23 @@
 						</figcaption>
 					</figure>
 					<figure>
-						<img src="img/ran.jpg" alt="site">
+						<img src="img/navigateLogo.png" alt="site">
 						<figcaption>
-						<h3>HTML5 course</h3>
+						<h3>Learning UX</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur.</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img src="img/alon.jpg" alt="site">
+						<img src="img/cssLogo.png" alt="site">
 						<figcaption>
-						<h3>HTML5 course</h3>
+						<h3>JS course</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur.</p>
 						</figcaption>
 					</figure>
 					<figure>
-						<img src="img/ran.jpg" alt="site">
+						<img src="img/blogLogo.png" alt="site">
 						<figcaption>
-						<h3>HTML5 course</h3>
+						<h3>Netcraft blog</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur.</p>
 						</figcaption>
 					</figure>
@@ -176,10 +188,9 @@
 					<h2>About us</h2>
 			</section>
 			<section class="footer-main">
-					<a href=""><img src="img/logo.svg" alt="Netcraft logo"></a>
+					<a class="logo-footer" href=""><img src="img/logo.svg" alt="Netcraft logo"></a>
 					<a class="back-top" href="#top"><img src="img/top.png" alt="back_to_top"></a>
-			</section>
-			
+			</section>			
 		</footer>
 	</body>
 </html>
