@@ -119,7 +119,11 @@
 	}
 
 	/** reference **/
-
+	
+	.reference h2 {
+		font-size: 2.3em;
+	}
+	
 	.reference h3 {
 		font-size: 1.3em;
 	}
