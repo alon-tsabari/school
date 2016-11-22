@@ -37,7 +37,7 @@
 	}
 	
 	.form-head h3 {
-		font-size: 1.4em
+		font-size: 1.2em;
 	}
 
 	.reference h3 {
@@ -88,7 +88,7 @@
 	}
 
 	.form-data p {
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 	
 	label {
@@ -266,5 +266,4 @@
 	figure {
 		width: 20%;
 	}
-	
 }
