@@ -252,11 +252,14 @@ h4 + hr {
 /*** sign-up ***/
 
 .form-data h2 {
-	margin-bottom: 10px;
+	margin-bottom: -15px;
 }
 
 .form-data h3 {
 	font-size: 1.05em;
+	background: url(../img/icons/important.png) no-repeat left;
+	background-size: 25px;
+	padding: 25px 0 0 30px
 }
 
 .form-data p {
