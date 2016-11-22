@@ -354,14 +354,19 @@
 	.container img {
 		height: 242.5px;
 		width: 80%;
+		transform: translateY(0);
 	}
 
 	.info h3 {
 		font-size: 1em;
 	}
 
+	.head p {
+		font-size:.9em;
+	}
+
 	.container .par {
-		font-size: .9em;
+		font-size: 1em;
 	}
 
 	/** parking **/
