@@ -3,6 +3,7 @@
 	
 	.parking-head h2, .form-data h2 {
 		font-size: 2.5em;
+		font-weight: 700;
 	}
 
 	/** header **/
@@ -146,7 +147,7 @@
 	}
 
 	.lectures > .main-wrapper {
-		width: 80%
+		width: 90%
 	}
 
 	/** parking **/
@@ -159,7 +160,7 @@
 	/** reference **/
 
 	figure {
-		width: 35%;
+		width: %;
 	}
 
 	/** absolute images **/
@@ -234,7 +235,7 @@
 	/** reference **/
 	
 	figure {
-		width: 23%;
+		width: 24%;
 	}
 
 	/** absolute images **/
@@ -324,7 +325,7 @@
 	}
 
 	.container, .container:last-child {
-		width: 32%;
+		width: 31%;
 	}
 
 	.container img {
@@ -399,12 +400,6 @@
 		content: '';
 		display: table;
 		clear: both;
-	}
-
-	/** reference **/
-	
-	figure {
-		width: 20%;
 	}
 
 	/** absolute images **/
