@@ -40,10 +40,9 @@ body {
 
 .parking-head h2, .form-data h2 {
 	font-size: 2.2em;
-	font-weight: 600;
 }
 
-.footer-main, .reference-main {
+.footer-main, .reference-main div {
 	display: flex;
 	justify-content: space-between;
 }
@@ -139,6 +138,7 @@ nav ul li > a {
 	padding: 20px;
 	border-bottom: 15px solid rgb(88, 87, 69);
 	position: relative;
+	z-index: -2;
 }
 
 .header-main h1 {
@@ -309,8 +309,12 @@ label {
 	font-size: 1.7em;
 }
 
-.reference-main {
+.reference-main div {
 	flex-wrap: wrap;
+}
+
+.reference-main hr {
+	margin: 0 0 20px;
 }
 
 figure {
@@ -368,6 +372,7 @@ figcaption p {
 	width: 70px;
 	right: 10px;
 	bottom: 0;
+	z-index: -1;
 }
 
 .robot-car {
@@ -410,6 +415,7 @@ nav > ul li:hover {
 	color: rgb(77, 77, 77);
 	transform: scale(.95);
 }
+
 
 /**	PSUEDO-ELEMENTS ***/
 
@@ -477,6 +483,7 @@ nav > ul li:hover {
 
  .form-head h2 {
  	color: rgb(225, 200, 47);
+ 	font-weight: 500;
  }
 
  .form-data [type="submit"] {
