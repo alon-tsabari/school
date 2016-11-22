@@ -1,5 +1,12 @@
+/** iphone 6 **/
 @media screen and (min-width: 375px) {
 	
+	.parking-head h2, .form-data h2 {
+		font-size: 2.5em;
+	}
+
+	/** header **/
+
 	.header-main h1 {
 		font-size: 2.4em;
 	}
@@ -7,6 +14,8 @@
 	.header-main p {
 		font-size: 1.2em;
 	}
+
+	/** lectures **/
 
 	.lectures-head h2 {
 		font-size: 1.45em;
@@ -20,9 +29,7 @@
 		font-size: 1.2em
 	}
 
-	.parking-head h2, .form-data h2 {
-		font-size: 2.5em;
-	}
+	/** parking **/
 
 	.parking-head h3 {
 		font-size: 1.3em;
@@ -36,11 +43,15 @@
 		font-size: 1.2em;
 	}
 	
+	/** sign-up **/
+
 	.form-head h3 {
 		font-size: 1.2em;
 		padding-top: 0px;
 		margin-top: 20px;
 	}
+	
+	/** reference **/
 
 	.reference h3 {
 		font-size: 1.2em;
@@ -51,7 +62,14 @@
 	}
 }
 
+/** IPhone 6, NEXUS 5X Portrait **/
 @media screen and (min-width: 400px) {
+	
+	.parking-head h2, .form-data h2 {
+		font-size: 2.7em;
+	}
+
+	/** header **/
 
 	.header-main h1 {
 		font-size: 2.6em;
@@ -61,6 +79,8 @@
 		font-size: 1.4em;
 	}
 
+	/** lectures **/
+	
 	.lectures-head h2 {
 		font-size: 1.65em;
 	}
@@ -73,9 +93,7 @@
 		font-size: 1.07em;
 	}
 
-	.parking-head h2, .form-data h2 {
-		font-size: 2.7em;
-	}
+	/** parking **/
 
 	.parking-head h3 {
 		font-size: 1.6em;
@@ -88,6 +106,8 @@
 	.parking-last li {
 		font-size: 1.3em;
 	}
+	
+	/** sign-up **/
 
 	.form-data p {
 		font-size: 1.2em;
@@ -97,6 +117,8 @@
 		font-size: 1.4em;
 	}
 
+	/** reference **/
+
 	.reference h3 {
 		font-size: 1.3em;
 	}
@@ -104,24 +126,157 @@
 	.reference p {
 		font-size: 1em;
 	}
+
+	/** absolute images **/
+
+	.robot-car {
+		width: 80px;
+		right: 10px;	
+	}
 	
 }
 
-
-@media screen and (min-width: 800px) {
+/** IPhone 5 Landscape **/
+@media only screen and (min-width: 550px) and (orientation:landscape){
 	
-	.parking-main, .parking-last, .lectures-main, .lectures-head {
+	/** lectures **/
+
+	.container img {
+		width: 60%;
+	}
+
+	.lectures > .main-wrapper {
+		width: 80%
+	}
+
+	/** parking **/
+
+	.parking-main, .parking-last {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	/** reference **/
+
+	figure {
+		width: 35%;
+	}
+
+	/** absolute images **/
+
+	.robot {
+		width: 150px;
+	}
+}
+
+/** IPhone 6, NEXUS 5X Landscape **/
+@media only screen and (min-width: 660px) and (orientation:landscape){
+	
+	.robot {
+		width: 200px
+	}
+}
+
+
+/** Ipad **/
+@media  only screen and (min-width: 760px) { 
+	
+	.lectures-head, .parking-main, .parking-last {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/** header **/
+
+	.header-top h1 {
+		display: block;
+		transition: margin .5s;
+	}
+
+	.header-main {
+		padding-left: 5%;
+	}
+
+	.header-main h1 {
+		font-size: 3.3em;
+	}
+
+	.header-main p {
+		font-size: 1.6em
+	}
+
+	/** lectures **/
+
+	.lectures-head {
+		align-items: baseline;
+	}
+
+	.lectures-head + hr {
+		margin: 2px 0 20px 0;
+	}
+
+	.container .par {
+		font-size: 1.1em;
+	}
+
+	.container, .container:last-child {
+		width: 70%;
+		margin: 0 auto 20px;
+	}
+
+	/** parking **/
+
+	.parking > .main-wrapper {
+		width: 65%;
+		margin-left: 5%;
+	}
+
+	/** reference **/
+	
+	figure {
+		width: 23%;
+	}
+
+	/** absolute images **/
+	
+	.robot {
+		width: 200px;
+	}
+
+	.robot-car {
+		width: 100px;
+		right: 10px;
+		bottom: -10px;
+	}
+
+	.robot-2 {
+		position: absolute;
+		display: block;
+		width: 100px;
+		right: 90px;
+		bottom: 0px;
+	}
+
+	.robot-2 {
+		animation: jump 1.5s infinite;
+	}
+}
+
+/** min-width 800px **/
+@media screen and (min-width: 800px) {
+	
+	.lectures-main {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	
 	.parking-main p, .parking-last h4 {
 		font-size: 1.1em;
 	}
 
-	/** HEADER **/
 
-	/** header-top **/
+	/** header **/
 
 	.header-top {
 		justify-content: center;
@@ -129,12 +284,11 @@
 	}
 
 	.header-top h1 {
-		display: block;
-		margin-left: 250px;
+		margin-left: 200px;
 	}
 
-	.logo {
-		width: 100px;
+	.logo img{
+		width: 150px;
 	}
 
 	.hamburger {
@@ -155,49 +309,31 @@
 		font-size: 1em;
 	}
 
-	/** header-main **/
-
 	.header-main {
-		padding: 50px 0 50px 10%;
-	}
-
-	.header-main h1 {
-		font-size: 3.3em;
+		padding: 50px 0 50px 5%;
 	}
 
 	.header-main p {
-		font-size: 1.4em
+		font-size: 1.5em;
 	}
-
-	.header-main img {
-		width: 250px;
-		right: 250px;
-	}
-
-	/** MAIN **/
 
 	/** lectures **/
-
-	.lectures-head {
-		align-items: baseline;
-	}
-
-	.lectures-head + hr {
-		margin: -2px 0 20px 0;
-	}
 
 	.lectures-head p {
 		font-size: .9em;
 	}
 
-	/** lecutres-main **/
-
-	.container {
-		width: 30%;
+	.container, .container:last-child {
+		width: 32%;
 	}
 
 	.container img {
 		height: 242.5px;
+		width: 80%;
+	}
+
+	.info h3 {
+		font-size: 1em;
 	}
 
 	.container .par {
@@ -219,15 +355,17 @@
 	}
 
 	.parking > .main-wrapper {
+		width: 80%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 
 	.box {
+		display: block;
 		width: 300px;
 		height: 300px;
-		background: url(../img/map.jpg) no-repeat center;
+		background: url(../img/icons/map.jpg) no-repeat center;
 		background-size: cover;
 	}
 
@@ -235,7 +373,7 @@
 	
 	.form-data > .main-wrapper {
 		width: 50%;
-		margin-left: 10%;
+		margin-left: 5%;
 	}
 
 	.form-data p {
@@ -268,5 +406,22 @@
 	figure {
 		width: 20%;
 	}
+
+	/** absolute images **/
 	
+	.robot {
+		width: 250px;
+		right: 250px;
+	}
+
+	.robot-car {
+		width: 70px;
+		right: 10px;
+	}
+
+	.robot-2 {
+		width:50px;
+		right:70px;
+		bottom: 0px;
+	}
 }
