@@ -19,7 +19,7 @@
 	/** lectures **/
 
 	.lectures-head h2 {
-		font-size: 1.45em;
+		font-size: 1.7em;
 	}
 
 	.lectures-head p {
@@ -83,7 +83,7 @@
 	/** lectures **/
 	
 	.lectures-head h2 {
-		font-size: 1.65em;
+		font-size: 1.8em;
 	}
 
 	.head h3 {
@@ -141,9 +141,27 @@
 @media only screen and (min-width: 550px) and (orientation:landscape){
 	
 	/** lectures **/
+	
+	.lectures-head h2 {
+		font-size: 2.4em;
+	}
+
+	.container, .container:last-child {
+		width: 70%;
+		margin: -15px auto;
+	}
 
 	.container img {
-		width: 60%;
+		width: 50%;
+		transform: translateY(40px)
+	}
+
+	.head::before {
+		display: none;
+	}
+
+	.info .par {
+		font-size: .8em;
 	}
 
 	.lectures > .main-wrapper {
@@ -157,12 +175,6 @@
 		justify-content: space-between;
 	}
 
-	/** reference **/
-
-	figure {
-		width: %;
-	}
-
 	/** absolute images **/
 
 	.robot {
@@ -173,6 +185,9 @@
 /** IPhone 6, NEXUS 5X Landscape **/
 @media only screen and (min-width: 660px) and (orientation:landscape){
 	
+	.lectures-head h2 {
+		font-size: 2.7em;
+	}
 	.robot {
 		width: 200px
 	}
@@ -223,6 +238,10 @@
 	.container, .container:last-child {
 		width: 70%;
 		margin: 0 auto 20px;
+	}
+
+	.head::before {
+		display: block;
 	}
 
 	/** parking **/
