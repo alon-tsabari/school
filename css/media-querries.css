@@ -1,0 +1,270 @@
+@media screen and (min-width: 375px) {
+	
+	.header-main h1 {
+		font-size: 2.4em;
+	}
+
+	.header-main p {
+		font-size: 1.2em;
+	}
+
+	.lectures-head h2 {
+		font-size: 1.45em;
+	}
+
+	.lectures-head p {
+		font-size: 1.15em;
+	}
+
+	.head h3 {
+		font-size: 1.2em
+	}
+
+	.parking-head h2, .form-data h2 {
+		font-size: 2.5em;
+	}
+
+	.parking-head h3 {
+		font-size: 1.3em;
+	}
+
+	.parking-main p, .parking-last h4 {
+		font-size: 1.3em;
+	}
+
+	.parking-last li {
+		font-size: 1.2em;
+	}
+	
+	.form-head h3 {
+		font-size: 1.4em
+	}
+
+	.reference h3 {
+		font-size: 1.2em;
+	}
+
+	.reference p {
+		font-size: .9em;
+	}
+}
+
+@media screen and (min-width: 400px) {
+
+	.header-main h1 {
+		font-size: 2.6em;
+	}
+
+	.header-main p {
+		font-size: 1.4em;
+	}
+
+	.lectures-head h2 {
+		font-size: 1.65em;
+	}
+
+	.head h3 {
+		font-size: 1.4em
+	}
+
+	.info p {
+		font-size: 1.07em;
+	}
+
+	.parking-head h2, .form-data h2 {
+		font-size: 2.7em;
+	}
+
+	.parking-head h3 {
+		font-size: 1.6em;
+	}
+
+	.parking-main p, .parking-last h4 {
+		font-size: 1.4em;
+	}
+
+	.parking-last li {
+		font-size: 1.3em;
+	}
+
+	.form-data p {
+		font-size: 1.3em;
+	}
+	
+	label {
+		font-size: 1.4em;
+	}
+
+	.reference h3 {
+		font-size: 1.3em;
+	}
+
+	.reference p {
+		font-size: 1em;
+	}
+	
+}
+
+
+@media screen and (min-width: 800px) {
+	
+	.parking-main, .parking-last, .lectures-main, .lectures-head {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.parking-main p, .parking-last h4 {
+		font-size: 1.1em;
+	}
+
+	/** HEADER **/
+
+	/** header-top **/
+
+	.header-top {
+		justify-content: center;
+		padding: 5px 0;
+	}
+
+	.header-top h1 {
+		display: block;
+		margin-left: 250px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	nav ul {
+		height: 242px;
+		width: 200px;
+		top: 50px;
+	}
+
+	nav:hover > ul {
+		height: 242px;
+	}
+
+	nav ul > li {
+		font-size: 1em;
+	}
+
+	/** header-main **/
+
+	.header-main {
+		padding: 50px 0 50px 10%;
+	}
+
+	.header-main h1 {
+		font-size: 3.3em;
+	}
+
+	.header-main p {
+		font-size: 1.4em
+	}
+
+	.header-main img {
+		width: 250px;
+		right: 250px;
+	}
+
+	/** MAIN **/
+
+	/** lectures **/
+
+	.lectures-head {
+		align-items: baseline;
+	}
+
+	.lectures-head + hr {
+		margin: -2px 0 20px 0;
+	}
+
+	.lectures-head p {
+		font-size: .9em;
+	}
+
+	/** lecutres-main **/
+
+	.container {
+		width: 30%;
+	}
+
+	.container img {
+		height: 242.5px;
+	}
+
+	.container .par {
+		font-size: .9em;
+	}
+
+	/** parking **/
+	
+	.parking-last div {
+		width: 48%;
+	}
+
+	.parking-last li {
+		font-size: 1em;
+	}
+
+	.parking-content {
+		width: 50%;
+	}
+
+	.parking > .main-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.box {
+		width: 300px;
+		height: 300px;
+		background: url(../img/map.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	/** sign-up **/
+	
+	.form-data > .main-wrapper {
+		width: 50%;
+		margin-left: 10%;
+	}
+
+	.form-data p {
+		margin: 0;
+	}
+
+	label {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	[type="text"], .form-data [type="submit"] {
+		width: 70%;
+		border-radius: 2px;
+	}
+
+	.form-data [type="submit"] {
+		float: right;
+	}
+
+	.form-data::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	/** reference **/
+	
+	figure {
+		width: 20%;
+	}
+	
+}
