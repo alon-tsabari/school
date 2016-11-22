@@ -1,8 +1,8 @@
 /** FONTS **/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600,700');
 
-/** GENERAL **/
+/** GENERAL STYLE-SHEET **/
 
 * {
 	box-sizing: border-box;
@@ -31,6 +31,8 @@ body {
 	font: 1em/1.5 'Roboto';
 }
 
+/******* Default STYLE-SHEET *******/
+
 .parking, .form-data, .reference {
 	box-shadow: inset 0px .2px 1px rgba(0,0,0,.4);
 	padding: 20px 0;
@@ -45,11 +47,14 @@ body {
 	justify-content: space-between;
 }
 
-/** Display: none **/
+/** display: none Elements **/
 
-.header-top h1, .parking h2 > span, .footer-top  {
+.header-top h1, .parking h2 > span, .footer-top, .box, .robot-2  {
 	display: none;
 }
+
+
+/** HEADER **/
 
 /** header-top **/
 
@@ -145,18 +150,11 @@ nav ul li > a {
 	font-weight: 600;
 }
 
-.header-main img {
-		position: absolute;
-		width: 80px;
-		right: 10px;
-		bottom: 0;
-	}
-
 
 /** MAIN **/
 
 .main-wrapper {
-	width:80%;
+	width:90%;
 	margin: 0px auto;
 }
 
@@ -170,7 +168,7 @@ h4 + hr {
 	padding: 20px 0;
 }
 
-/** lectures-info **/
+/** lectures-main **/
 
 .lectures-head h2 {
 	font-size: 1.2em;
@@ -219,6 +217,10 @@ h4 + hr {
 }
 
 /** parking **/
+
+.parking {
+	position: relative;
+}
 
 .location {
 	background: url(../img/icons/road.png) left no-repeat;
@@ -332,7 +334,7 @@ figcaption p {
 /*** FOOTER ***/
 
 .footer-top, .footer-main {
-	padding: 10px 10%;
+	padding: 10px 5%;
 }
 
 .footer-top h2 {
@@ -352,10 +354,39 @@ figcaption p {
 	width: 40px;
 }
 
+/** absolute images **/
+
+.robot, .robot-car{
+	position: absolute;
+	animation: jump 1.5s infinite;
+}
+
+.robot {
+	width: 70px;
+	right: 10px;
+	bottom: 0;
+}
+
+.robot-car {
+	width: 70px;
+	right: 5px;
+	bottom: -5px;
+}
+
+/** keyframes **/
+
+@keyframes jump {
+	0% { transform: translateY(0) }
+	20% { transform: translateY(-10px) }
+	50% { transform: translateY(0) }
+	100% { transform: translateY(0) }
+}
+
+
 /*** PSUEDO-CLASSES ***/
 
 nav:hover > ul{
-	height: 288px;
+	height: 293px;
 }
 
 nav:hover .floor {
