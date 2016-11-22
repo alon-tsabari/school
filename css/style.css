@@ -33,9 +33,9 @@ body {
 
 /******* Default STYLE-SHEET *******/
 
-.parking, .form-data, .reference {
+.lectures, .parking, .form-data, .reference {
 	box-shadow: inset 0px .2px 1px rgba(0,0,0,.4);
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 .parking-head h2, .form-data h2 {
@@ -164,10 +164,6 @@ h4 + hr {
 }
 
 /** lectures **/
-
-.lectures {
-	padding: 20px 0;
-}
 
 /** lectures-main **/
 
@@ -306,7 +302,7 @@ label {
 }
 
 .reference h2 {
-	font-size: 1.7em;
+	font-size: 1.8em;
 }
 
 .reference-main div {
