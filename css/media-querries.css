@@ -135,7 +135,7 @@
 	/** absolute images **/
 
 	.robot-car {
-		width: 80px;
+		width: 110px;
 		right: 10px;	
 	}
 	
@@ -156,8 +156,7 @@
 	}
 
 	.container img {
-		width: 50%;
-		transform: translateY(40px)
+		transform: translateY(40px);
 	}
 
 	.head::before {
@@ -182,7 +181,12 @@
 	/** absolute images **/
 
 	.robot {
-		width: 150px;
+		width: 200px;
+		right: 0;
+	}
+
+	.robot-car {
+		width: 90px;
 	}
 }
 
@@ -196,8 +200,13 @@
 	.info .par {
 		font-size: 1em;
 	}
+
 	.robot {
 		width: 200px
+	}
+
+	.robot-car {
+		width: 90px;
 	}
 }
 
@@ -250,6 +259,7 @@
 
 	.head::before {
 		display: block;
+		left: 150px;
 	}
 
 	/** parking **/
@@ -265,6 +275,33 @@
 		width: 24%;
 	}
 
+	/** footer **/
+
+	.footer-top {
+		display: block;
+		position: relative;
+	}
+
+	.footer-main {
+		position: relative;
+	}
+
+	.back-top, .hi-robot {
+		position: absolute;
+	}
+
+	.back-top {
+		width: 60px;
+		top: -30px;
+		right: 20px;
+	}
+
+	.hi-robot {
+		width: 120px;
+		right: 80px;
+		top: -60px;
+	}
+
 	/** absolute images **/
 	
 	.robot {
@@ -272,21 +309,9 @@
 	}
 
 	.robot-car {
-		width: 100px;
+		width: 190px;
 		right: 10px;
 		bottom: -10px;
-	}
-
-	.robot-2 {
-		position: absolute;
-		display: block;
-		width: 100px;
-		right: 90px;
-		bottom: 0px;
-	}
-
-	.robot-2 {
-		animation: jump 1.5s infinite;
 	}
 }
 
@@ -356,9 +381,11 @@
 	}
 
 	.container img {
-		height: 242.5px;
-		width: 80%;
 		transform: translateY(0);
+	}
+
+	.head:before {
+		left: 60px;
 	}
 
 	.info h3 {
@@ -442,13 +469,7 @@
 	}
 
 	.robot-car {
-		width: 70px;
+		width: 150px;
 		right: 10px;
-	}
-
-	.robot-2 {
-		width:50px;
-		right:70px;
-		bottom: 0px;
 	}
 }
