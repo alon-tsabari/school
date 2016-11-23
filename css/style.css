@@ -247,6 +247,15 @@ h4 + hr {
 	padding-left: 20px;
 }
 
+.waze {
+	width: 300px;
+	height: 100px;
+	border-radius: 5px;
+	margin: 0 auto;
+	background: url(../img/icons/waze-logo.jpg) center no-repeat;
+	background-size: cover;
+}
+
 /*** sign-up ***/
 
 .form-data h2 {
