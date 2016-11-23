@@ -286,6 +286,18 @@
 		position: relative;
 	}
 
+	/** absolute images **/
+	
+	.robot {
+		width: 200px;
+	}
+
+	.robot-car {
+		width: 190px;
+		right: 10px;
+		bottom: -10px;
+	}
+
 	.back-top, .hi-robot {
 		position: absolute;
 	}
@@ -300,18 +312,6 @@
 		width: 120px;
 		right: 80px;
 		top: -60px;
-	}
-
-	/** absolute images **/
-	
-	.robot {
-		width: 200px;
-	}
-
-	.robot-car {
-		width: 190px;
-		right: 10px;
-		bottom: -10px;
 	}
 }
 
