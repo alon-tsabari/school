@@ -327,6 +327,12 @@
 	.parking-main p, .parking-last h4 {
 		font-size: 1.1em;
 	}
+	
+	/** display: none **/
+	
+	.waze {
+		display: none;
+	}
 
 
 	/** header **/
