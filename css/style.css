@@ -389,7 +389,7 @@ figcaption p {
 /*** PSUEDO-CLASSES ***/
 
 nav:hover > ul{
-	height: 293px;
+	height: 289.5px;
 }
 
 nav:hover .floor {
